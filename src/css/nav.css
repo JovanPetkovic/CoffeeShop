@@ -11,6 +11,7 @@ p {
   font-family: 'Open Sans', sans-serif; }
 
 .navigation {
+  transition: all 0.5s;
   height: 100%;
   display: flex;
   background-color: #222;
@@ -58,5 +59,46 @@ p {
     align-self: center;
     right: 3%; }
     .navigation .menu button {
+      width: 40px;
+      height: 40px; }
+
+.closed {
+  transition: all 0.5s;
+  height: 100%;
+  display: flex;
+  background-color: #222;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .closed .nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; }
+    .closed .nav #home img {
+      margin: 0;
+      margin-top: 10px;
+      height: 50px;
+      width: 50px; }
+    .closed .nav ul {
+      display: none; }
+    .closed .nav .info {
+      display: none; }
+    .closed .nav .media {
+      align-self: flex-end; }
+      .closed .nav .media img {
+        margin: 10px 8px;
+        padding: 0;
+        height: 40px;
+        width: 40px; }
+  .closed .menu {
+    position: absolute;
+    align-self: center;
+    right: 25%; }
+    .closed .menu button {
       width: 40px;
       height: 40px; }
