@@ -1,0 +1,86 @@
+doctype html
+html
+    head
+        title Coffee Shop
+        meta(charset="UTF-8")
+        meta(name="description", content="Coffe Shop")
+        meta(name="keywords", content="Coffee,Cowork,Tea,Relax")
+        meta(name="author", content="Jovan Petkovic")
+        //build:css css/main.min.css    
+        link(rel="stylesheet", type="text/css", href="css/menu.css")
+        link(rel="stylesheet", type="text/css", href="css/nav.css")
+        //endbuild
+        link(href="https://fonts.googleapis.com/css?family=Coustard|Open+Sans:300",rel="stylesheet")
+    body
+        .landing
+            .closed
+                .nav
+                    a(href="index.html", target="_blank", id="home")
+                        img(src="images/cup.png", alt="")
+                    ul
+                        li 
+                            a(href="#", target="_blank") Menu
+                        li
+                            a(href="#", target="_blank") Coffee
+                        li
+                            a(href="#", target="_blank") About Us
+                        li
+                            a(href="#", target="_blank") News
+                        li
+                            a(href="#", target="_blank") Gallery
+                    .info
+                        h2 City
+                        p Working Hours
+                        p Adress
+                        p Phone Number
+                    .media
+                        a(href="#", target="_blank")
+                            img(src="images/facebook.svg", alt="Facebook")
+                        a(href="#", target="_blank")
+                            img(src="images/snapchat.svg", alt="Snapchat")
+                        a(href="#", target="_blank")
+                            img(src="images/instagram.svg", alt="Instagram")
+                .menu
+                    button
+            .content
+                .items
+                    .item
+                        h1 Lorem ipsum
+                        ul
+                            li 
+                                h2 #1 Lorem ipsum dolor sit amet
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            li 
+                                h2 #2 Lorem ipsum dolor sit amet
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            li 
+                                h2 #3 Lorem ipsum dolor sit amet
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            li 
+                                h2 #4 Lorem ipsum dolor sit amet
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    .item
+                        h1 Lorem ipsum
+                        ul
+                            li 
+                                h2 #1 Lorem ipsum dolor sit amet
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            li 
+                                h2 #2 Lorem ipsum dolor sit amet
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            li 
+                                h2 #3 Lorem ipsum dolor sit amet
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            li 
+                                h2 #4 Lorem ipsum dolor sit amet
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+
+                .pictures
+                    img(src="images/capuccino.jpg", alt="Capuccino")
+                    img(src="images/macchiato.jpg", alt="Macchiato")
+                .order
+                    a(href="#", target="_blank") Order Online
+script(type="application/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+//build:js js/main.min.js
+script(type="application/javascript", src="js/navigation.js")
+//endbuild
