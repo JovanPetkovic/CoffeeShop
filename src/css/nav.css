@@ -10,58 +10,6 @@ body {
 p {
   font-family: 'Open Sans', sans-serif; }
 
-.navigation {
-  transition: all 0.5s;
-  height: 100%;
-  display: flex;
-  background-color: #222;
-  width: 350px;
-  justify-content: center;
-  position: relative; }
-  .navigation .nav {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between; }
-    .navigation .nav #home img {
-      margin: 0;
-      margin-top: 60px;
-      height: 100px;
-      width: 100px;
-      margin-left: 15px; }
-    .navigation .nav ul {
-      margin-top: 60px;
-      padding: 0;
-      list-style-type: none;
-      text-transform: uppercase; }
-      .navigation .nav ul li {
-        font-family: 'Coustard', serif;
-        margin-top: 20px;
-        text-align: center;
-        font-size: 190%; }
-        .navigation .nav ul li a {
-          color: white;
-          text-decoration: none; }
-    .navigation .nav .info h2 {
-      margin-bottom: 40px; }
-    .navigation .nav .media {
-      align-self: flex-end; }
-      .navigation .nav .media img {
-        margin: 20px 8px;
-        padding: 0;
-        height: 40px;
-        width: 40px; }
-  .navigation .menu {
-    position: absolute;
-    align-self: center;
-    right: 3%; }
-    .navigation .menu button {
-      width: 40px;
-      height: 40px; }
-
 .closed {
   transition: all 0.5s;
   height: 100%;
@@ -80,25 +28,107 @@ p {
     text-align: center;
     justify-content: space-between; }
     .closed .nav #home img {
+      transition: 0.5s ease-in-out;
       margin: 0;
-      margin-top: 10px;
+      margin-top: 30px;
       height: 50px;
       width: 50px; }
     .closed .nav ul {
-      display: none; }
+      visibility: hidden;
+      opacity: 0;
+      margin-top: 60px;
+      padding: 0;
+      list-style-type: none;
+      text-transform: uppercase; }
+      .closed .nav ul li {
+        font-family: 'Coustard', serif;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 190%; }
+        .closed .nav ul li a {
+          color: white;
+          text-decoration: none; }
     .closed .nav .info {
-      display: none; }
+      visibility: hidden;
+      opacity: 0; }
+      .closed .nav .info h2 {
+        margin-bottom: 40px; }
     .closed .nav .media {
-      align-self: flex-end; }
+      display: flex;
+      flex-direction: column; }
       .closed .nav .media img {
         margin: 10px 8px;
         padding: 0;
         height: 40px;
         width: 40px; }
   .closed .menu {
+    transition: all 0.5s;
     position: absolute;
     align-self: center;
     right: 25%; }
     .closed .menu button {
+      width: 40px;
+      height: 40px; }
+
+.navigation {
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  display: flex;
+  background-color: #222;
+  width: 350px;
+  justify-content: center;
+  position: relative; }
+  .navigation .nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; }
+    .navigation .nav #home img {
+      transition: 0.5s ease-in-out;
+      margin: 0;
+      margin-top: 30px;
+      height: 100px;
+      width: 100px;
+      margin-left: 15px; }
+    .navigation .nav ul {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 1s ease-in-out 0.7s;
+      margin-top: 60px;
+      padding: 0;
+      list-style-type: none;
+      text-transform: uppercase; }
+      .navigation .nav ul li {
+        font-family: 'Coustard', serif;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 190%; }
+        .navigation .nav ul li a {
+          color: white;
+          text-decoration: none; }
+    .navigation .nav .info {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 1s ease-in-out 1.7s; }
+      .navigation .nav .info h2 {
+        margin-bottom: 40px; }
+    .navigation .nav .media {
+      display: flex;
+      flex-direction: row; }
+      .navigation .nav .media img {
+        margin: 20px 8px;
+        padding: 0;
+        height: 40px;
+        width: 40px; }
+  .navigation .menu {
+    transition: all 0.5s;
+    position: absolute;
+    align-self: center;
+    right: 3%;
+    color: white; }
+    .navigation .menu button {
       width: 40px;
       height: 40px; }

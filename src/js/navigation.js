@@ -6,13 +6,16 @@ $(function(){
         },
         cacheDom: function(){
             this.$page = $('.landing');
-            this.$nav = this.$page.children().first();
-            this.$button = this.$nav.find('button');
+            this.$navigation = this.$page.children().first();
+            this.$button = this.$navigation.find('button');
+            this.$ul = this.$navigation.find('ul');
+            this.$info = this.$navigation.find('.info');
+            console.log(this.$button);
         },
         toggleNav: function(){
             this.$button.on('click', function(){
-                this.$nav.toggleClass('closed');
-                this.$nav.toggleClass('navigation');
+                this.$navigation.toggleClass('navigation');
+                this.$button.toggleClass('is-active');
             }.bind(this));
         }
     }

@@ -6,8 +6,10 @@ html
         meta(name="description", content="Coffe Shop")
         meta(name="keywords", content="Coffee,Cowork,Tea,Relax")
         meta(name="author", content="Jovan Petkovic")
+        //build:css css/main.min.css    
         link(rel="stylesheet", type="text/css", href="css/nav.css")
         link(rel="stylesheet", type="text/css", href="css/landing.css")
+        //endbuild
         link(href="https://fonts.googleapis.com/css?family=Coustard|Open+Sans:300",rel="stylesheet")
     body
         .landing
@@ -39,7 +41,7 @@ html
                         a(href="#", target="_blank")
                             img(src="images/instagram.svg", alt="Instagram")
                 .menu
-                    button(type="", )
+                    button
             .content
                 .heading
                     h2 Welcome To
@@ -48,4 +50,6 @@ html
                 .order
                     a(href="#", target="_blank") Order Online
 script(type="application/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+//build:js js/main.min.js
 script(type="application/javascript", src="js/navigation.js")
+//endbuild
