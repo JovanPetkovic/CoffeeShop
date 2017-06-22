@@ -37,7 +37,7 @@
       </div>
       <div class="content">
         <div class="items">
-          <div class="item">
+          <div class="item" data-num="0">
             <h1>Lorem ipsum</h1>
             <ul>
               <li> 
@@ -58,7 +58,7 @@
               </li>
             </ul>
           </div>
-          <div class="item">
+          <div class="item" data-num="1">
             <h1>Lorem ipsum</h1>
             <ul>
               <li> 
@@ -80,8 +80,11 @@
             </ul>
           </div>
         </div>
-        <div class="pictures"><img src="images/capuccino.jpg" alt="Capuccino"><img src="images/macchiato.jpg" alt="Macchiato"></div>
-        <div class="order"><a href="#" target="_blank">Order Online</a></div>
+        <div class="pictures">
+          <div id="images0">   <img src="images/capuccino.jpg" alt="Capuccino"><img src="images/macchiato.jpg" alt="Macchiato"></div>
+          <div id="images1">   <img src="images/tea.jpg" alt="Tea"><img src="images/blacktea.jpg" alt="Black Tea"></div>
+          <div class="order"></div><a href="#" target="_blank">Order Online</a>
+        </div>
       </div>
     </div>
   </body>
@@ -89,4 +92,5 @@
 <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--build:js js/main.min.js-->
 <script type="application/javascript" src="js/navigation.js"></script>
+<script type="application/javascript" src="js/menu.js"></script>
 <!--endbuild-->

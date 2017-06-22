@@ -44,7 +44,7 @@ html
                     button
             .content
                 .items
-                    .item
+                    div(class="item" data-num="0")
                         h1 Lorem ipsum
                         ul
                             li 
@@ -59,7 +59,7 @@ html
                             li 
                                 h2 #4 Lorem ipsum dolor sit amet
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    .item
+                    div(class="item" data-num="1")
                         h1 Lorem ipsum
                         ul
                             li 
@@ -76,11 +76,16 @@ html
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
 
                 .pictures
-                    img(src="images/capuccino.jpg", alt="Capuccino")
-                    img(src="images/macchiato.jpg", alt="Macchiato")
-                .order
+                    #images0    
+                        img(src="images/capuccino.jpg", alt="Capuccino")
+                        img(src="images/macchiato.jpg", alt="Macchiato")
+                    #images1    
+                        img(src="images/tea.jpg", alt="Tea")
+                        img(src="images/blacktea.jpg", alt="Black Tea")
+                    .order
                     a(href="#", target="_blank") Order Online
 script(type="application/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 //build:js js/main.min.js
 script(type="application/javascript", src="js/navigation.js")
+script(type="application/javascript", src="js/menu.js")
 //endbuild
