@@ -6,6 +6,7 @@ p {
   font-family: 'Open Sans', sans-serif; }
 
 .closed {
+  z-index: 1;
   transition: all 0.5s;
   height: 100vh;
   display: flex;

@@ -1,4 +1,5 @@
 .content {
+  width: 100%;
   padding-bottom: 0; }
   .content .aboutus {
     display: flex;
@@ -28,11 +29,53 @@
       font-family: "Open Sans";
       font-size: 120%;
       line-height: 180%; }
-  .content #cover {
+  .content .coverdiv {
+    position: relative;
+    background-image: url(../images/cafeinterior.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: block;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     margin: 0; }
+  .content .pictures {
+    height: 3500px;
+    width: 100%;
+    background-image: url(../images/menu-background.jpg);
+    position: relative; }
+    .content .pictures div {
+      box-shadow: 0 0 5rem rgba(0, 0, 0, 0.75);
+      position: absolute; }
+    .content .pictures #div0 {
+      z-index: 40;
+      top: 5%;
+      left: 45%; }
+    .content .pictures #div1 {
+      z-index: 39;
+      left: 15%;
+      top: 15%; }
+    .content .pictures #div2 {
+      z-index: 39;
+      left: 50%;
+      top: 40%; }
+    .content .pictures #div3 {
+      z-index: 40;
+      left: 55%;
+      top: 58%; }
+      .content .pictures #div3 img {
+        width: 80%;
+        height: 80%; }
+    .content .pictures #div4 {
+      z-index: 41;
+      left: 10%;
+      top: 50%; }
+    .content .pictures #div5 {
+      z-index: 41;
+      left: 10%;
+      top: 73%; }
+    .content .pictures #div6 {
+      left: 40%;
+      top: 87%; }
 
 .arrow {
   background-color: Transparent;
