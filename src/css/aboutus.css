@@ -39,7 +39,7 @@
     width: 100%;
     margin: 0; }
   .content .pictures {
-    height: 3500px;
+    height: 3300px;
     width: 100%;
     background-image: url(../images/menu-background.jpg);
     position: relative; }
@@ -47,35 +47,36 @@
       box-shadow: 0 0 5rem rgba(0, 0, 0, 0.75);
       position: absolute; }
     .content .pictures #div0 {
-      z-index: 40;
-      top: 5%;
+      z-index: 39;
+      top: 7%;
       left: 45%; }
     .content .pictures #div1 {
-      z-index: 39;
+      z-index: 40;
       left: 15%;
-      top: 15%; }
+      top: 18%; }
     .content .pictures #div2 {
       z-index: 39;
       left: 50%;
-      top: 40%; }
+      top: 33%; }
     .content .pictures #div3 {
       z-index: 40;
       left: 55%;
-      top: 58%; }
+      top: 47%; }
       .content .pictures #div3 img {
         width: 80%;
         height: 80%; }
     .content .pictures #div4 {
       z-index: 41;
       left: 10%;
-      top: 50%; }
+      top: 43%; }
     .content .pictures #div5 {
       z-index: 41;
       left: 10%;
-      top: 73%; }
+      top: 63%; }
     .content .pictures #div6 {
+      z-index: 42;
       left: 40%;
-      top: 87%; }
+      top: 77%; }
 
 .arrow {
   background-color: Transparent;
